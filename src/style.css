@@ -1,0 +1,36 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css);
+
+/* PRODUCT ITEM */
+.item-container .item {
+  background-color: #EEEEEE;
+}
+
+/* PRODUCT ITEM - SAME HEIGHT */
+.theme-wide .item-name {
+  height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* PRODUCT ITEM - PRICE */
+.item-price-container.hidden {
+  display: block;
+}
+
+.item-price-container.hidden::after {
+  content: "Consultar";
+}
+
+/* PRODUCT ITEM - CUSTOMIZABLE */
+.item-image-container a[title$="Customizable"]::after {
+  color: white;
+  background-color: #444444;
+  display: inline-block;
+  content: "Customizable";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+}

@@ -1,0 +1,6 @@
+.product_tag {
+  display: flex;
+  align-items: center;
+  font-family: monospace;
+  margin-bottom: 16px;
+}
