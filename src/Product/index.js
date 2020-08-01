@@ -8,6 +8,8 @@ export default () => {
   if (wrapper) {
     const productTags = document.createElement('div');
     productTags.setAttribute('id', 'product-tags');
+    productTags.setAttribute('class', 'clear-both');
+
     wrapper.appendChild(productTags);
     
     ReactDOM.render(<Component />, productTags);
