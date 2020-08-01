@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import "./styles.css";
 
 function Product() {
-  const [tags, setTags] = useState(['decatizado', 'artesanal']);
+  const [tags, setTags] = useState([]);
   let retry = 3;
   const fetchTags = function(timeout) {
     setTimeout(function(){
